@@ -8,71 +8,90 @@
         rel="stylesheet" 
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
         crossorigin="anonymous">
-  <title>Two Name Production Studio</title>
+  <title>TwoNameWorkshop</title>
 </head>
-
-  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-    <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">二ツ名製作工房 by ihwka</h1>
-      <p class="lead my-3"> ネットやゲームで名前を作るとき、面倒に感じたことはありませんか？そんなときは二ツ名製作工房にお任せください！日本語名も英語名も一瞬で生成します。条件を選んでボタンを押すだけの自動生成と、好きな文字を使った入力生成を用意しました。お好みの方法でお好みの名前を探してください( *´艸｀)</p>
-      <p class="lead mb-0"><a href="https://twitter.com/hakataHIMANCHU" class="text-white fw-bold">contact us on Twitter</a></p>
-    </div>
-  </div>
-
-  <div class="card w-100">
-    <div class="card text-center">
-      <div class="card-header">
-        automatic generation
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">自動生成</h5>
-        <p class="card-text">ジェンダー・言語を選んで生成ボタンをクリック</p>
-        <p class="card-text">
-          <select class="form-select" aria-label="ジェンダー" name="gender" id="gender">
-            <option value="non-select">ランダム</option>
-            <option value="male">男性</option>
-            <option value="female">女性</option>
-          </select>
-          <select class="form-select" aria-label="言語" name="language" id="language">
-            <option value="">日本語or英語</option>
-            <option value="non-select">ランダム</option>
-            <option value="jp">日本語</option>
-            <option value="eng">英語</option>
-          </select>
-        </p>
-        <button type="button" class="btn btn-outline-primary" id="full-create">生成</button>
-      </div>
-      <div class="card-footer text-muted">
-        <div id="result-area"></div>
+<body class="mb-3">
+  <main class="container">
+    <!---->
+    <div class="p-4 p-md-5 mb-br-ml-3 mt-5 text-white rounded bg-dark">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 fst-italic">二ツ名製作工房 by ihwka</h1>
+        <p class="lead my-3"> ネットやゲームで名前を作るとき、面倒に感じたことはありませんか？そんなときは二ツ名製作工房にお任せください！日本語名も英語名も一瞬で生成します。条件を選んでボタンを押すだけの自動生成と、好きな文字を使った手動生成を用意しました。お好みの方法でお好みの名前を探してください( *´艸｀)</p>
+        <p class="lead mb-0"><a href="https://twitter.com/hakataHIMANCHU" class="text-white fw-bold">contact us on Twitter</a></p>
       </div>
     </div>
-  </div>
-
-  <div class="card w-100">
-    <div class="card text-center">
-      <div class="card-header">
-        input generation
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">入力生成</h5>
-        <p class="card-text">任意の文字を2枠以上に入力してください。※各枠最大3文字</p>
-        <p class="card-text">
-          <div class="input-group mb-3">
-            <input type="text" id="user-name1" size="4" maxlength="3">
-            <input type="text" id="user-name2" size="4" maxlength="3">
-            <input type="text" id="user-name3" size="4" maxlength="3">
-            <input type="text" id="user-name4" size="4" maxlength="3">
-            <input type="text" id="user-name5" size="4" maxlength="3">
-            <button class="input-group-text" id="mojikara-create">生成</button>
+  
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-6">
+          <div class="card w-100 text-center">
+              <div class="card-header">
+                automatic generation
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">自動生成</h5>
+                <p class="card-text">ジェンダー・言語を選んで生成ボタンをクリック</p>
+                <p class="card-text">
+                  <select class="form-select" aria-label="ジェンダー" name="gender" id="gender">
+                    <option value="non-select">ランダム</option>
+                    <option value="male">男性</option>
+                    <option value="female">女性</option>
+                  </select>
+                  <select class="form-select" aria-label="言語" name="language" id="language">
+                    <option value="">日本語or英語</option>
+                    <option value="non-select">ランダム</option>
+                    <option value="jp">日本語</option>
+                    <option value="eng">英語</option>
+                  </select>
+                </p>
+                <button type="button" class="btn btn-outline-secondary" id="full-create">
+                  生成
+                </button>
+              </div>
+              <div class="card-footer text-muted">
+                <div id="result-area"></div>
+              </div>
           </div>
-        </p>
-      </div>
-      <div class="card-footer text-muted">
-        <div id="result-area2"></div>
+        </div>
+        <div class="col-6">
+          <div class="card w-100 text-center">
+              <div class="card-header">
+                input generation
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">入力生成</h5>
+                <p class="card-text">任意の文字を2枠以上に入力してください。※各枠最大3文字</p>
+                <p class="card-text">
+                  <div class="input-group mb-3">
+                    <input class="form-control" type="text" id="user-name1" size="4" maxlength="3">
+                    <input class="form-control" type="text" id="user-name2" size="4" maxlength="3">
+                    <input class="form-control" type="text" id="user-name3" size="4" maxlength="3">
+                    <input class="form-control" type="text" id="user-name4" size="4" maxlength="3">
+                    <input class="form-control" type="text" id="user-name5" size="4" maxlength="3">
+                    <button class="btn btn-outline-secondary" id="mojikara-create">
+                      生成
+                    </button>
+                  </div>
+                </p>
+              </div>
+              <div class="card-footer text-muted">
+                <div id="result-area2"></div>
+              </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  
+    <script src="summerCon22.js"></script>
 
-  <script src="summerCon22.js"></script>
+  </main>
+
+  <footer class="blog-footer text-center">
+    <p>This page built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/hakataHIMANCHU">ihwka</a>.</p>
+    <p>
+      <a href="https://ihwka.github.io/summerCon22/summerCon22.html">Back to top</a>
+    </p>
+  </footer>
+
 </body>
 </html>
