@@ -8,14 +8,15 @@ const language = document.getElementById('language');
 const agButton = document.getElementById('full-create');
 const agRsDivided = document.getElementById('result-area');
 
-// 手動生成のフォーム
+// 入力生成のフォーム
 const w1 = document.getElementById('user-name1'); // １枠目（左から）
 const w2 = document.getElementById('user-name2'); // ２枠目
 const w3 = document.getElementById('user-name3'); // ３枠目
 const w4 = document.getElementById('user-name4'); // ４枠目
 const w5 = document.getElementById('user-name5'); // ５枠目
+const w6 = document.getElementById('user-name6'); // ６枠目
 
-// 手動生成のボタンと結果表示エリア
+// 入力生成のボタンと結果表示エリア
 const igButton = document.getElementById('mojikara-create');
 const igRsDivided = document.getElementById('result-area2');
 
@@ -196,7 +197,7 @@ let lNameParts = [
 
 
 /**
- * 手動生成の処理
+ * 入力生成の処理
  */
 igButton.onclick = () => {
 
@@ -216,7 +217,7 @@ igButton.onclick = () => {
 function manGenr() {
   // 入力されたワードを一旦配列に
   let inputWord = [];
-  inputWord.push(w1.value, w2.value, w3.value, w4.value, w5.value);
+  inputWord.push(w1.value, w2.value, w3.value, w4.value, w5.value, w6.value);
   
   // 上記の配列をshuffle関数で並び替えて結合
   let conv = shuffle(inputWord);
