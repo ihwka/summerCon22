@@ -62,16 +62,31 @@
                 <h5 class="card-title">入力生成</h5>
                 <p class="card-text">任意の文字を2枠以上に入力してください。※各枠最大3文字</p>
                 <p class="card-text">
-                  <div class="input-group mb-3">
-                    <input class="form-control" type="text" id="user-name1" size="4" maxlength="3">
-                    <input class="form-control" type="text" id="user-name2" size="4" maxlength="3">
-                    <input class="form-control" type="text" id="user-name3" size="4" maxlength="3">
-                    <input class="form-control" type="text" id="user-name4" size="4" maxlength="3">
-                    <input class="form-control" type="text" id="user-name5" size="4" maxlength="3">
-                    <button class="btn btn-outline-secondary" id="mojikara-create">
-                      生成
-                    </button>
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" id="user-name1" maxlength="3">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="user-name2" maxlength="3">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="user-name3" maxlength="3">
+                    </div>
                   </div>
+                  <div class="row">
+                    <div class="col md-3">
+                      <input type="text" class="form-control" id="user-name4" maxlength="3">
+                    </div>
+                    <div class="col md-3">
+                      <input type="text" class="form-control" id="user-name5" maxlength="3">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="user-name6" maxlength="3">
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-secondary mt-3" id="mojikara-create">
+                    生成
+                  </button>
                 </p>
               </div>
               <div class="card-footer text-muted">
